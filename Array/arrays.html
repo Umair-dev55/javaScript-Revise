@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h1><i>Arrays in JS</i></h1>
+    <script>
+        //Array
+        let marks = ["Apple", "Banana", "Mango", "Orange"];
+        //1st method to print
+        // console.log(marks[0]);
+        // console.log(marks[1]);
+        // console.log(marks[2]);
+        // console.log(marks[3]);
+        // console.log(marks[4]);
+        // console.log(marks);
+        //Looping over array
+        for (let index = 0; index < marks.length; index++) {
+            console.log(marks[index]);
+        }
+        // lets make another array and print from for loop
+        heroes = ["superman,batman,joker,hulk,ironman"];
+        for (let index = 0; index < heroes.length; index++) {
+            console.log("now using for", heroes[index]);
+        }
+        // now print using for-of loop
+        for (const hero of heroes) {
+            console.log("now using for-of", hero);
+        }
+        for (const element of heroes) {
+            console.log("Now using element instead of index", element)
+        }
+
+        //Now practise of printing array using loop
+        cities = ["lhr,karachi,kpk,multan,sahiwal,okara"]
+        for (const city of cities) {
+            console.log("by using for loop", city);
+        }
+        for (const city of cities) {
+            console.log("now using for-of", city.toUpperCase());
+        }
+
+
+    </script>
+</body>
+
+</html>

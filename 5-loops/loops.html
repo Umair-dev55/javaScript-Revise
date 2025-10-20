@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        /* Main heading */
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #2c3e50;
+            padding-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Subheading */
+        h2 {
+            font-size: 1.5rem;
+            color: #2980b9;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Content styling */
+        .content {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Code block styling */
+        .content code {
+            display: block;
+            background-color: #2d3436;
+            color: #ecf0f1;
+            padding: 15px;
+            margin-top: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+        }
+
+        /* Styling for list */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        ul li {
+            padding: 8px 0;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 2rem;
+                padding-top: 20px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .content code {
+                font-size: 1em;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+                padding-top: 20px;
+            }
+
+            .content {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .content code {
+                font-size: 0.95em;
+                padding: 10px;
+            }
+
+            ul li {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+                padding-top: 10px;
+            }
+
+            .content {
+                padding: 8px;
+                margin: 5px;
+            }
+
+            .content code {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+
+            ul li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Understanding Loops in JavaScript</h1>
+    <div class="content">
+        <h2>General Loops:</h2>
+        <ul>
+            <li>For Loop</li>
+            <li>While Loop</li>
+            <li>Do-While Loop</li>
+            <li>For-Of Loop</li>
+            <li>For-In Loop</li>
+        </ul>
+
+        <h3>For Loop Example:</h3>
+        <code>
+// For Loop Example
+for (let x = 1; x <= 10; x++) {
+    console.log("Value of x is :", x);
+}
+
+for (let y = 50; y <= 65; y++) {
+    console.log("The Value of Y is :", y);
+}
+        </code>
+
+        <h3>While Loop Example:</h3>
+        <code>
+let j = 11;
+while (j <= 11) {
+    console.log("Umair Ali");
+    j++;
+}
+        </code>
+
+        <h3>Do-While Loop Example:</h3>
+        <code>
+let w = 20;
+do {
+    console.log("Apna College");
+    w++;
+} while (w <= 26);
+        </code>
+
+        <h3>For-Of Loop (String) Example:</h3>
+        <code>
+let str = "SUBHANI";
+let length = 0;
+for (let val of str) {
+    console.log("value of val is :", val);
+    length++;
+}
+console.log("length of str is : ", length);
+        </code>
+
+        <h3>For-In Loop (Object) Example:</h3>
+        <code>
+let store = {
+    productId: 123,
+    productName: "Laptop",
+    productCategory: "Computers",
+    productQuantity: 56,
+};
+
+for (let key in store) {
+    console.log("key = ", key, "value =", store[key]);
+}
+        </code>
+
+        <h3>For-Of Loop Example (String):</h3>
+        <code>
+let stringg = "Umair";
+let sizee = 0;
+for (const element of stringg) {
+    console.log(element);
+    sizee++;
+}
+console.log(sizee);
+        </code>
+
+        <h3>For-In Loop Example (Products):</h3>
+        <code>
+let products = {
+    computer: 2,
+    laptop: 4,
+    lcd: 6,
+    monitor: 10,
+    bluetooth: 15,
+    handfree: 150,
+};
+
+for (const key in products) {
+    console.log("key is  : ", key, "and its value is :", products[key]);
+}
+        </code>
+    </div>
+
+    <script>
+        // For Loop Example
+        for (let x = 1; x <= 10; x++) {
+            console.log("Value of x is :", x);
+        }
+        for (let y = 50; y <= 65; y++) {
+            console.log("The Value of Y is :", y);
+        }
+
+        // While Loop Example
+        let j = 11;
+        while (j <= 11) {
+            console.log("Umair Ali");
+            j++;
+        }
+
+        // Do-While Loop Example
+        let w = 20;
+        do {
+            console.log("Apna College");
+            w++;
+        } while (w <= 26);
+
+        // For-Of Loop Example (String)
+        let str = "SUBHANI";
+        let length = 0;
+        for (let val of str) {
+            console.log("value of val is :", val);
+            length++;
+        }
+        console.log("length of str is : ", length);
+
+        // For-In Loop Example (Object)
+        let store = {
+            productId: 123,
+            productName: "Laptop",
+            productCategory: "Computers",
+            productQuantity: 56,
+        };
+        for (let key in store) {
+            console.log("key = ", key, "value =", store[key]);
+        }
+
+        // For-Of Loop Example (String)
+        let stringg = "Umair";
+        let sizee = 0;
+        for (const element of stringg) {
+            console.log(element);
+            sizee++;
+        }
+        console.log(sizee);
+
+        // For-In Loop Example (Products)
+        let products = {
+            computer: 2,
+            laptop: 4,
+            lcd: 6,
+            monitor: 10,
+            bluetooth: 15,
+            handfree: 150,
+        };
+
+        for (const key in products) {
+            console.log("key is  : ", key, "and its value is :", products[key]);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable & Conditional Statment Practise</title>
+</head>
+
+<body>
+    <h1>Variable & Conditional Statment Practise</h1>
+    <script>
+        const store = {
+            itemPrice: 2400,
+            itemName: "Laptop",
+            quantity: 2,
+            discount: 10,
+            isMember: true,
+        };
+        console.log(store);
+       const totalCost=store.itemPrice*store.quantity;
+       const discountPrice=totalCost*store.discount/100;
+    //    ----Show Output---------
+     if (isMember=true) {
+        console.log("Item: ",store.itemName)
+        console.log("Quantity: ",store.quantity)
+        console.log("Total Price Before Discount:",totalCost);
+        console.log("Final Price After Discount:",totalCost-discountPrice);
+     }; 
+    </script>
+</body>
+
+</html>

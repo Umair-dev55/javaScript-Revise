@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <script>
+        
+        //Arrays In JS
+
+        // let arr=["Apple","Banana","Mango","Orange"];
+        // console.log(arr);
+        // arr.push("Grapes");
+        // console.log(arr);
+        // arr.pop();
+        // console.log(arr);
+        // arr.shift();
+        // console.log(arr);
+        // arr.unshift("Pineapple");
+        // console.log(arr);
+        // console.log(arr.length);
+        // console.log(arr[2]);
+
+
+
+        //.push() add to end
+        // pop() delete from end & Return
+        //toString(): Convert Array To String
+        let vegitables = ["patato", "Apple", "litchi", "Tomato"];
+        //Now add in Array chips by push
+        vegitables.push("chips", "paneer");
+        console.log(vegitables);
+        //pop() del last
+        vegitables.pop();
+        console.log(vegitables);
+        // Array To string by using   toString()
+        console.log(vegitables.toString());
+
+        console.log("Conacat");
+        //----Now Concat for combine to array
+        let marvel = ["Thor", "Spiderman", "Ironman"];
+        console.log(marvel);
+        let hero = ["superman", "Batman"];
+        console.log(hero);
+        //Now add Both array
+        heroes = marvel.concat(hero);
+        console.log(heroes);
+
+        // --- UNshift--- add in start
+        //-----Shift------Remove from start
+
+        // now unshift its like a push but its add on start
+        console.log("Now start unshift& shift");
+        heroes.unshift("Dr Strange");
+        console.log(`unshift  ${heroes}`);
+        // now use shift del from start
+        heroes.shift("Dr Strange");
+        console.log(`shift  ${heroes}`);
+
+        //-----Slice ------ part of array nikal k deta (start ind,end ind)
+        // --- splice------ del /add in array everywhere 
+
+        console.log("Now start Slice & Splice");
+        let cricketers = ["Virat Kohli", "Sachin Tendulkar", "MS Dhoni", "Ricky Ponting", "Jacques Kallis"];
+        console.log(cricketers);
+        console.log(cricketers.slice(2, 5));
+        //-----Splice Here
+        let arr = [2, 4, 5, 6, 7, 8, 9];
+        arr.splice(4, 2, 700, 800);
+
+    </script>
+</body>
+</html>

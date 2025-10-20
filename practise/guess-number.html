@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess Number</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.png">
+
+</head>
+
+<body>
+  <h1>Guess Number Game</h1>
+  <script>
+    // ------------------using while loop
+
+    // ----------using if else
+    // {
+    //   const gameNum = 20;
+    //   const userNum = prompt("Guess Number between 1 to 20");
+    //   console.log("User enter number :", userNum);
+    //   if (gameNum == userNum) {
+    //     console.log("You won the match");
+    //   } else {
+    //     console.log("You loss ");
+    //   }
+    // }
+    let gameNumber = 7; // Computer ka secret number
+    let userNumber = prompt("Guess the Number");
+
+    // Jab tak user ka guess sahi na ho tab tak loop chalega
+    while (userNumber != gameNumber) {
+      // console.log("You Loss!! PLease Try Again");
+      userNumber = prompt("You wrong!! Guess again Number ");
+    }
+    if (userNumber == gameNumber) {
+      console.log("🎉 You won!");
+    }
+    // Jab loop se bahar aayega iska matlab guess sahi hogaya
+
+  </script>
+</body>
+
+</html>

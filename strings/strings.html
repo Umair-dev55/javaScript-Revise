@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
+
+</head>
+
+<body>
+    <h1>Strings In Javascript</h1>
+    <script>
+        //normal sring
+        let str = "Umair";
+        console.log(str);
+        // print its data types string
+        console.log(typeof str);
+        // print its data types string key
+        console.log(typeof str.length)
+
+        let obj = {
+            item: "pen",
+            price: 10,
+        };
+        //in normal object we print value like this 
+        console.log("SImple string exp is the price of", obj.item, "is", obj.price, "rupees");
+
+        //but in easy way template literals
+        // string interpolation ${obj.item} 
+        console.log(`template literals exp is The price of ${obj.item} is ${obj.price} rupees`);
+        //You can check using back ticks its os simple
+        // backslash n se next line print kerwaty waqt like 
+        //isko escape characters kehty h
+        console.log("umair\nali");
+        //You can check umair nd ali print in different line
+        // tab
+        console.log("umair\tali");
+        let size="Umair\tAli";
+        console.log("Length of size is :",size.length);
+
+        //------------String Methods in JS------
+        // toUpperCase()
+        // toLowerCase()
+        // trim()
+        let method="    lower to upper  ";
+        console.log(method.toUpperCase());
+
+        let method2="   upper to  lower    ";
+        console.log(method2.toLowerCase());
+
+        let method3="   trim    remove left&right spaaces    ";
+        console.log(method3.trim());
+        
+        
+    </script>
+</body>
+
+</html>

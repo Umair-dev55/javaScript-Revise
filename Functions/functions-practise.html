@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <h1><i>Function Practise </i></h1>
+
+    <script>
+
+        //Using 
+        let count = 0;
+        function Vouwals(str) {
+            for (const index of str) {
+                if (index === "a" ||
+                    index === "e" ||
+                    index === "i" ||
+                    index === "o" ||
+                    index === "u" ||
+                    index === "A" ||
+                    index === "E" ||
+                    index === "I" ||
+                    index === "O" ||
+                    index === "U"
+                ) {
+                    count++;
+                }
+            }
+            console.log(count);
+        }
+
+        // Now Same fundtions using Arrow
+        let run = 0;
+        const countvouwals = (str) => {
+            for (const index of str) {
+                if (index === "a" ||
+                    index === "e" ||
+                    index === "i" ||
+                    index === "o" ||
+                    index === "u" ||
+                    index === "A" ||
+                    index === "E" ||
+                    index === "I" ||
+                    index === "O" ||
+                    index === "U"
+                ) {
+                    run++;
+                }
+            }
+            console.log(run);
+
+            
+        }
+
+        // const array = ["1", "2", "3"];
+
+        // array.forEach((index) => console.log(index * index));
+
+        // Expected output: "a"
+        // Expected output: "b"
+        // Expected output: "c"
+
+    </script>
+</body>
+
+</html>

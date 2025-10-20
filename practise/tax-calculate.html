@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #ecf0f1;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tax Calculator</h1>
+    <p>Go to console ( or Press F12 > Console ) to view your tax details</p>
+
+
+    <script>
+        function calculateTax(income) {
+            let tax = 0;
+
+            if (income <= 50000) {
+                tax = 0;
+            } else if (income <= 100000) {
+                tax = (income - 50000) * 0.10;
+            } else if (income <= 200000) {
+                tax = (50000 * 0.10) + (income - 100000) * 0.20;
+            } else {
+                tax = (50000 * 0.10) + (100000 * 0.20) + (income - 200000) * 0.30;
+            }
+
+            let netIncome = income - tax;
+
+            console.log("Your Income: Rs. " + income);
+            console.log("Calculated Tax: Rs. " + tax.toFixed(2));
+            console.log("Net Income after Tax: Rs. " + netIncome.toFixed(2));
+        }
+
+        let userInput = prompt("Enter your total income:");
+        let income = parseFloat(userInput);
+
+        if (!isNaN(income) && income >= 0) {
+            calculateTax(income);
+        } else {
+            console.log("Invalid input. Please enter a valid number.");
+        }
+
+    </script>
+</body>
+
+</html>

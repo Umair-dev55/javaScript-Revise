@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Functions in JavaScript</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            text-align: justify;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 30px auto;
+            font-size: 1.1em;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .code-block {
+            background-color: #2d3436;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1em;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .output {
+            background-color: #ecf0f1;
+            padding: 10px;
+            margin-top: 10px;
+            border-left: 5px solid #16a085;
+            font-size: 1.2em;
+        }
+
+        .output span {
+            font-weight: bold;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .code-block {
+                font-size: 1em;
+                padding: 12px;
+            }
+
+            .output {
+                font-size: 1.1em;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .code-block {
+                font-size: 0.95em;
+                padding: 10px;
+            }
+
+            .output {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><i>Understanding Functions in JavaScript</i></h1>
+    
+    <div class="container">
+        <p>
+            Functions are reusable blocks of code that perform a specific task. They help in organizing code,
+            improving readability, and reducing redundancy. Functions can take inputs (parameters) and can return
+            outputs
+            (results).
+        </p>
+
+        <h2>Code Example</h2>
+        <div class="code-block">
+            <pre>
+// Simple Function
+function myFunction() {
+    console.log("Umair Ali\nWe are learning js ");
+    console.log("we are learning js");
+}
+myFunction();
+
+// Function with Parameters
+function sayHello(hello) {
+    console.log(hello);
+}
+sayHello("I love Umair");
+
+// Function with Return Value
+function sum(x, y) {
+    let i = x + y;
+    return i;
+}
+let val = sum(10, 20);
+console.log(val);
+            </pre>
+        </div>
+
+        <h2>Output</h2>
+        <div class="output">
+            <span>Umair Ali</span><br>
+            We are learning js<br>
+            we are learning js<br>
+            I love Umair<br>
+            30
+        </div>
+    </div>
+
+    <script>
+        // Simple Function
+        function myFunction() {
+            console.log("Umair Ali\nWe are learning js ");
+            console.log("we are learning js");
+        }
+        myFunction();
+
+        // Function with Parameters
+        function sayHello(hello) {
+            console.log(hello);
+        }
+        sayHello("I love Umair");
+
+        // Function with Return Value
+        function sum(x, y) {
+            let i = x + y;
+            return i;
+        }
+        let val = sum(10, 20);
+        console.log(val);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Parameters Example</title>
+    <style>
+        /* General styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 900px;
+            margin: 20px auto;
+            font-size: 1.1em;
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .code-container {
+            font-family: 'Courier New', Courier, monospace;
+            color: #16a085;
+            background-color: #eaeaea;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 1.1em;
+        }
+
+        /* Styling for the output log */
+        .output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-left: 6px solid #16a085;
+            font-size: 1.2em;
+        }
+
+        .output span {
+            font-weight: bold;
+            color: #16a085;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .code-container {
+                font-size: 1em;
+                padding: 12px;
+            }
+
+            .output {
+                font-size: 1.1em;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .code-container {
+                font-size: 0.95em;
+                padding: 10px;
+            }
+
+            .output {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Functions with Parameters</h1>
+
+    <div class="container">
+        <p>In this example, we demonstrate how to pass parameters to JavaScript functions and handle them properly.</p>
+
+        <h2>Code Example</h2>
+        <div class="code-container">
+            <pre>
+function parameter(x) {
+    console.log(x);
+}
+parameter("Umair");
+
+function second(y) {
+    console.log(y);
+}
+second("Fahad");
+
+function third(str) {
+    console.log(str);
+}
+third("ASAD");
+
+function sum(str) {
+    const parts = str.split(',');  // Split the string by comma
+    console.log(parts[0] + parts[1]);  // Combine the two parts
+}
+sum('Add 1st , Add 2nd');
+            </pre>
+        </div>
+
+        <h2>Output</h2>
+        <div class="output">
+            Umair<br>
+            Fahad<br>
+            ASAD<br>
+            Add 1st Add 2nd
+        </div>
+    </div>
+
+    <script>
+        // JavaScript Functions
+        function parameter(x) {
+            console.log(x);
+        }
+        parameter("Umair");
+
+        function second(y) {
+            console.log(y);
+        }
+        second("Fahad");
+
+        function third(str) {
+            console.log(str);
+        }
+        third("ASAD");
+
+        function sum(str) {
+            const parts = str.split(',');  // Split the string by comma
+            console.log(parts[0] + parts[1]);  // Combine the two parts
+        }
+        sum('Add 1st , Add 2nd');
+
+        function addition(a, b) {
+            console.log(`Value of a is ${a} :\nvalue of b is ${b} :`);
+            s = a + b;
+            console.log(`The value of Sum is : ${s}`);
+            return;
+        }
+        addition(2, 2);
+    </script>
+</body>
+
+</html>

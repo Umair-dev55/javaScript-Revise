@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+
+<body>
+    <h1><i>Practise of array 2</i></h1>
+    <script>
+        let sum = 0;
+        marks = [85, 97, 44, 37, 76, 60];
+        for (const mark of marks) {
+            sum = mark + sum;
+        }
+        const avg = sum / marks.length;
+        console.log(`The Average of marks :${avg}`);
+
+        prices = [250, 645, 300, 900, 50];
+        for (let i = 0; i < prices.length; i++) {
+            console.log(prices[i]);
+            let discount = prices[i] / 10;
+            prices[i] -= discount;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+
+</head>
+
+<body>
+    <h1>Data Types</h1>
+    <script>
+        // ---------Primitive       :         Data Types------------
+        // ---------Non-Primitive   :         Objects------------
+
+        // ---------Primitive       :         Data Types Here------------
+        //nn bb ss u
+        let a = null;     //null
+        let b = 345;    //Number
+        let c = true;   //can also be false  & its called be a "Boolean"   
+        let d = BigInt("100") + BigInt("1100");        //BigInt
+        let e = "Umair";            //String
+        let f = Symbol("I am a Symbol");    //symbol
+        let g = undefined;      //undefined 
+        console.log(a, b, c, d, e, f, g);
+
+        // ---------Non-Primitive   :         Objects Here------------
+        const item = {
+            "umair": true,
+            "ali": false,
+            "levish": 67,
+            "Vibe": undefined,
+        }
+        console.log(item["umair"]);
+
+        console.log(item["ali"]);
+
+        console.log(item["levish"]);
+
+        console.log(item["vibe"]);
+
+
+        //------------uutPut is ------------------------_-
+        // true
+        // false
+        // 67
+        // undefined
+        //----------------Practise here--------------------------------
+
+        // Number
+        let cash = 25;
+        // String
+        let fullName = "Umair Ali";
+        //Boolesn
+        let isFollow = true;
+        // undefine
+        let x;
+        // NUll
+        let y = null;
+
+        // MOst just yhi use hti 
+
+
+        // ---------Non-Primitive------------
+        // 1- ----------Arrays---------------
+        // 2-----------Functions------------
+
+        const student = {
+            fullName: "Umair Ali",
+            Program: "adp cs",
+            Year: "24 to 26",
+            cgpa: 3.5,
+            isPass: true,
+        };
+        const Job = {
+            position: "Frontend Developer",
+            posts: 2,
+            requirements: "HTML+CSS+JS+REACT",
+            Age: "18 to 25",
+            hasLinkedin: true,
+        };
+        // -------------1st Method To print from Objects----------
+        console.log(student["cgpa"]);
+        //-------------2nd method to print from Objects------------
+        console.log(student.fullName);
+
+
+        // now if i want to change in value of any key 
+        //job post changing
+
+        Job["posts"] = (Job["posts"]) + 1;
+        console.log(Job["posts"]);
+
+        // Now update in position of job 
+
+        Job["position"] = "Backend developer";
+        // Print position key after updation
+        console.log(Job.position);
+        // Type check post key in job
+        console.log(typeof Job.posts);
+
+        //---------------Must Remember-----------------
+        //---------Too Much Important----------------
+
+        // let update ho jata hai simply
+        // const update ni hota
+        // Hum Obejct k under cnstant key ko update kr skty hai 
+
+    </script>
+</body>
+
+</html>

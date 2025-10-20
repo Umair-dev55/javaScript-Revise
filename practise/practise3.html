@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practise</title>
+  </head>
+
+  <body>
+    <h1>Print Even Number till 50</h1>
+    <h1>Print odd Number till 50</h1>
+    <h1>using if else and for loop to do print table of 10</h1>
+    <h1>using if else and for loop to do print table of 12</h1>
+
+    <script>
+      //Using Loop even number till 50
+      console.log("Table of 2 Starts from Here");
+      let table = 0;
+      for (let i = 0; i <= 50; i += 2) {
+        console.log("2x", table, "is", i);
+        table++;
+      }
+      console.log("table run time :", table);
+
+      console.log("Odd number till 50");
+      // Odd Number till 50
+      let run = 0;
+      for (let num = 0; num < 50; num++) {
+        if (num % 2 !== 0) {
+          console.log("Odd Number :", num);
+        }
+      }
+
+      console.log("Table of 10 Starts from Here");
+
+      //Now using via if else statment
+      let runTime = 0;
+      for (let num = 0; num < 100; num++) {
+        if (num % 10 === 0) {
+          console.log("10 x ", runTime, "=", num);
+          runTime++;
+        }
+      }
+      console.log("Totaltime of Running loop is : ", runTime);
+      // using if else and for loop to do print table of 12
+      console.log("Table of 12 Starts from Here");
+
+      let h = 0;
+      for (let u = 1; u <= 120; u++) {
+        if (u % 12 === 0) {
+          console.log("12 x ", h, "=", u);
+          h++;
+        }
+      }
+    </script>
+  </body>
+</html>

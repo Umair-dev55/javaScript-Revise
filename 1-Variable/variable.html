@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="/favicon.png" </head>
+
+<body>
+    <script>
+
+        // var is global scoped variable
+        // let blocked scope 
+        // const have fixed value can't change it
+
+
+        // --------Input by Using Let---------
+
+        var umair = 10;
+        var ali = 20;
+        {
+            var umair = 100;
+            console.log(`Now umair using var in blocked scoped ${umair}`);
+        }
+
+
+        console.log(`Now umair using var in Global scoped ${umair}`);
+
+        // --------OUTput by Using Var---------
+
+        // OUTput is  Now umair using var in blocked scoped 100
+        // Now umair using var in Global scoped 100
+
+
+        // --------Input by Using Let---------
+
+
+        // --------Comment Out let example Due to Through Error---------
+
+
+        // let umair = 10;
+        // let ali = 20;
+        // {
+        //     let umair = 100;
+        //     console.log(`Now umair using let in blocked scoped ${umair}`);
+        // }
+
+
+        // console.log(`Now umair using let in Global scoped ${umair}`);
+
+
+        // --------OUTput by Using Let---------
+        // Uncaught SyntaxError: Identifier 'umair' has already been declared (at variable.html:38:13)
+
+
+
+
+        // ---------------Practise here --------------
+
+
+
+
+
+        // console.log('Welcome to Learning javascript.');
+        // console.log("Umair Ali");
+        // console.log("I am a Web Developer");
+        // fullname="My age is ";
+        // age=24;
+        // console.log(fullname);
+        // console.log(age);
+
+        // let follow=true;
+        // console.log(follow);
+        // follow="ali";
+        // console.log(follow);
+
+        // var old trick to store variable we can store everywhere anytime
+        // can change value of variable by again assign
+
+        var name = "Umair";
+        var name = "Ali";
+        console.log(name);
+
+        // Only Use one time
+        //can't assign with let again same variable
+        // let age = 24;
+        // console.log(age);
+        // let age = 26;
+        // console.log(age);
+        // show error like this
+        // maine abi comments add kr diya coz to chk other code
+
+        // -----------------Let can update by use this trick---------------------
+        // but can't assign again with let
+        // its benefitial for long code when you dont know pre asign variable
+        let date = 24;
+        console.log(date);
+        date = 26;
+        console.log(date);
+
+        // Update Value Now pf date
+
+        {
+            let year = 24;
+            console.log(year);
+        }
+        {
+            let year = 28;
+            console.log(year);
+        }
+        // ye different blcok me same use kr skty or yh just us si block ka variable count hga
+        // let ko define kr k bad me b value assign kr skty like this
+        let a;
+        a = 25;
+        console.log(a);
+
+        // ---------------------Constant-----------------------
+        // can't change and update r re use
+
+        // const chairs = 24;
+        // console.log(chairs);
+        // chairs = 26;
+        // console.log(chairs);
+
+        // Show Error with re asign or updation
+        // Temporary comment kr ra for next coding
+
+        // ye different blcok me same use kr skty or yh just us si block ka variable count hga
+        // const ko define kr k bad me b value assign kr skty like this must remember only in diferent bloxks
+
+        {
+            let fee = 24;
+            console.log(fee);
+        }
+        {
+            let fee = 35;
+            console.log(fee);
+        }
+
+
+        var x = 5;
+        var y = 10;
+        var z = 12;
+        var w = 20;
+        {
+            var x = 100;
+        }
+        console.log(x + x);
+    </script>
+</body>
+
+</html>
