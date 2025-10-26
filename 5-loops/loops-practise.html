@@ -10,16 +10,20 @@
 <body>
     <i>Loop Pracrise</i>
     <script>
-    //    let n= prompt("How many times you want to return");
-    //     for (let i=0; i <n; i++) {
-    //         console.log(i);
-    //     }
-    let sum=0;
-    let n = parseInt(prompt("How many times you want to return"));
-    for (let i = 0; i <= n; i++) {
-        sum += i+1;
-        console.log("The sum of first is" ,  n ,"The value of I is " , i , "The sum of natural numbers is " , sum);
-    }
+           let n= prompt("How many times you want to return");
+            for (let i=0; i <n; i++) {
+                console.log(i);
+            }
+        marks = {
+            herry: 20,
+            jerry: 30,
+            fairy: 40,
+            merry: 50,
+            sherry: 60,
+        }
+        for (let key in marks) {
+            console.log("Marks of ", key, "is", marks[key]);
+        }
     </script>
 </body>
 
