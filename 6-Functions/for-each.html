@@ -17,14 +17,28 @@
         //     console.log(val);
         // })
         // For each with Arrow Function
-        arr.forEach((val)=>{
-            console.log(val);
+        arr.forEach((value, index, arr) => {
+            console.log(value, index, arr);
         })
         console.log("2Nd Exp");
         //Write a program that takes an array of numbers and prints each number doubled using forEach with an arrow function.
-        arr.forEach((val)=>{
-            console.log(val*2);
+        arr.forEach((val) => {
+            console.log(val * 2);
         })
+
+        console.log("3rd Exp");
+        //1st Example
+        const arr2 = ["Lahore", "Karachi", "Isb", "Sialkot", "Sahiwal"];
+        arr2.forEach((val, index, arr2) => {
+            console.log(val, index, arr2);
+        });
+        //2nd Example
+        console.log("2nd Example");
+        const arr3 = ["Lahore", "Karachi", "Isb", "Sialkot", "Sahiwal"];
+        let printVal = (val, index, arr3) => {
+            console.log(val);
+        }
+        arr3.forEach(printVal);
     </script>
 </body>
 

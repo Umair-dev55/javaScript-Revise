@@ -19,7 +19,7 @@
         const list = document.getElementById("userList");
 
         // Using forEach with arrow function to render users
-        users.forEach(user => {
+        users.forEach((user)=> {
             const li = document.createElement("li");
             li.textContent = `${user.name} (${user.age} years old)`;
             list.appendChild(li);
