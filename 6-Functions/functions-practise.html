@@ -17,6 +17,7 @@
     <script>
 
         //Using 
+        let str= prompt("Enter Name for Vouwals Check");
         let count = 0;
         function Vouwals(str) {
             for (const index of str) {
@@ -36,29 +37,29 @@
             }
             console.log(count);
         }
-
+Vouwals(str);
         // Now Same fundtions using Arrow
-        let run = 0;
-        const countvouwals = (str) => {
-            for (const index of str) {
-                if (index === "a" ||
-                    index === "e" ||
-                    index === "i" ||
-                    index === "o" ||
-                    index === "u" ||
-                    index === "A" ||
-                    index === "E" ||
-                    index === "I" ||
-                    index === "O" ||
-                    index === "U"
-                ) {
-                    run++;
-                }
-            }
-            console.log(run);
+        // let run = 0;
+        // const countvouwals = (str) => {
+        //     for (const index of str) {
+        //         if (index === "a" ||
+        //             index === "e" ||
+        //             index === "i" ||
+        //             index === "o" ||
+        //             index === "u" ||
+        //             index === "A" ||
+        //             index === "E" ||
+        //             index === "I" ||
+        //             index === "O" ||
+        //             index === "U"
+        //         ) {
+        //             run++;
+        //         }
+        //     }
+        //     console.log(run);
 
             
-        }
+        // }
 
         // const array = ["1", "2", "3"];
 
