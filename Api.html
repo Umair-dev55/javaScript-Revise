@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User List</title>
+</head>
+
+<body>
+    <h2>Users:</h2>
+    <ul id="userList"></ul>
+
+    <script>
+        const users = [
+            { name: "Ali", age: 25 },
+            { name: "Sara", age: 28 },
+            { name: "Hamza", age: 22 }
+        ];
+
+        const list = document.getElementById("userList");
+
+        // Using forEach with arrow function to render users
+        users.forEach(user => {
+            const li = document.createElement("li");
+            li.textContent = `${user.name} (${user.age} years old)`;
+            list.appendChild(li);
+        });
+    </script>
+</body>
+
+</html>
