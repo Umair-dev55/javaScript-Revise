@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Array Method</title>
+</head>
+
+<body>
+    <h1><i>Map Array Method</i></h1>
+    <p><i>Create new array with the result of some operations .The value its call back returns are used to form new
+            array</i></p>
+    <script>
+        // let nums = [555, 666, 777];
+        // let newarr = nums.map((val) => {
+        //     return val;
+        // })
+        // console.log(newarr);
+
+        // let newarr2 = nums.map((val) => {
+        //     return val * 2;
+        // })
+        // console.log(newarr2);
+        //---------Map-----------
+        //new array 
+        let nums = [10, 20, 30];
+        let newarrbymap = nums.map((val) => {
+            return val * val;
+        })
+        console.log(newarrbymap);
+
+        //---------Filter-----------
+        //remove elements & New Arr
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let even = num.filter((val) => {
+            return val > 3;
+        })
+        console.log(even);
+
+
+        //---------Reduce-----------
+        // n of input & give one output like sum avg subtract
+        const arrreduce = [1, 2, 3, 4];
+        const output = arrreduce.reduce((pre, curr) => {
+            return pre >= curr? pre:curr;
+        })
+        console.log(output);
+
+    </script>
+</body>
+
+</html>

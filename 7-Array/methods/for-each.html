@@ -39,7 +39,17 @@
             console.log(val);
         }
         arr3.forEach(printVal);
+
+        const arr4 = [20, 25, 30, 35, 40, 45, 50, 60];
+        let newarray = arr4.filter((val) => {
+            return val % 2 === 0;
+        })
+        console.log(newarray);
+
+        arrCapital=["Lahore", "Karachi", "Isb", "Sialkot", "Sahiwal"];
+        let arrcapital=arrCapital.forEach((val,idx) => {
+            console.log(val.toUpperCase()),idx;
+        })
     </script>
 </body>
-
 </html>
