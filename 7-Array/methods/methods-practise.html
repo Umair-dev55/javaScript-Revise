@@ -10,11 +10,25 @@
 <body>
     Method practise
     <script>
+        console.log("first Practise")
         const marks = [22, 44, 77, 97, 99, 77, 98];
         const pass = marks.filter((val) => {
             return val >= 90;
         });
         console.log(pass);
+
+        console.log("Second Practise");
+        let n = prompt("Enter the value of n to make array");
+        let arr = [];
+        for (let i = 0; i <= n; i++) {
+            arr[i] = i;
+        }
+        console.log(arr);
+
+        let sumArr=arr.reduce((pre, next) => {
+            return pre + next;
+        })
+        console.log(`Sum of this Array is ${sumArr}`);
     </script>
 </body>
 
