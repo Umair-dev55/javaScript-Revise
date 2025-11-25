@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter array method</title>
+</head>
+
+<body>
+    <h1><i>Filter method</i></h1>
+    <script>
+        let n = prompt("Print the Number of n");
+        let arr = [];
+        for (let i = 1; i < n; i++) {
+            arr[i] = i;
+        }
+        console.log(arr);
+        let sum = arr.reduce((pre, red) => {
+            return pre + red;
+        })
+        console.log(`sum is ${sum}`);
+    </script>
+</body>
+
+</html>
